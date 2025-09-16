@@ -176,4 +176,146 @@ Error details: {0}</translation>
         <translation>Current Date:</translation>
     </message>
 </context>
+
+<context>
+    <name>PlayerEditView</name>
+    <message>
+        <location filename="../udescjoinvilletteaview/playereditview.py" line="24"/>
+        <source>Editar</source>
+        <translation>Edit</translation>
+    </message>
+    <message>
+        <location filename="../udescjoinvilletteaview/playereditview.py" line="25"/>
+        <source>Novo</source>
+        <translation>New</translation>
+    </message>
+    <message>
+        <location filename="../udescjoinvilletteaview/playereditview.py" line="41"/>
+        <source>Nome</source>
+        <translation>Name</translation>
+    </message>
+    <message>
+        <location filename="../udescjoinvilletteaview/playereditview.py" line="48"/>
+        <source>Observação</source>
+        <translation>Observation</translation>
+    </message>
+    <message>
+        <location filename="../udescjoinvilletteaview/playereditview.py" line="53"/>
+        <source>Cancela</source>
+        <translation>Cancel</translation>
+    </message>
+    <message>
+        <location filename="../udescjoinvilletteaview/playereditview.py" line="59"/>
+        <source>Nome:</source>
+        <translation>Name:</translation>
+    </message>
+    <message>
+        <location filename="../udescjoinvilletteaview/playereditview.py" line="60"/>
+        <source>Data de Nascimento:</source>
+        <translation>Birth Date:</translation>
+    </message>
+    <message>
+        <location filename="../udescjoinvilletteaview/playereditview.py" line="61"/>
+        <source>Observação:</source>
+        <translation>Observation:</translation>
+    </message>
+</context>
+<context>
+    <name>PlayerListView</name>
+    <message>
+        <location filename="../udescjoinvilletteaview/playerlistview.py" line="110"/>
+        <source>Pesquisar:</source>
+        <translation>Search:</translation>
+    </message>
+    <message>
+        <location filename="../udescjoinvilletteaview/playerlistview.py" line="112"/>
+        <source>Digite o nome ou ID</source>
+        <translation>Enter your name or ID</translation>
+    </message>
+    <message>
+        <location filename="../udescjoinvilletteaview/playerlistview.py" line="120"/>
+        <source>Nome</source>
+        <translation>Name</translation>
+    </message>
+    <message>
+        <location filename="../udescjoinvilletteaview/playerlistview.py" line="139"/>
+        <source>Detalhes</source>
+        <translation>Details</translation>
+    </message>
+    <message>
+        <location filename="../udescjoinvilletteaview/playerlistview.py" line="142"/>
+        <source>Nome: </source>
+        <translation>Name: </translation>
+    </message>
+    <message>
+        <location filename="../udescjoinvilletteaview/playerlistview.py" line="143"/>
+        <source>Data de Nascimento: </source>
+        <translation>Birth Data: </translation>
+    </message>
+    <message>
+        <location filename="../udescjoinvilletteaview/playerlistview.py" line="144"/>
+        <source>Observação: </source>
+        <translation>Observation: </translation>
+    </message>
+    <message>
+        <location filename="../udescjoinvilletteaview/playerlistview.py" line="150"/>
+        <source>Nome:</source>
+        <translation>Name: </translation>
+    </message>
+    <message>
+        <location filename="../udescjoinvilletteaview/playerlistview.py" line="153"/>
+        <source>Data de Nascimento:</source>
+        <translation>Birth Date: </translation>
+    </message>
+    <message>
+        <location filename="../udescjoinvilletteaview/playerlistview.py" line="159"/>
+        <source>Observação:</source>
+        <translation>Observation: </translation>
+    </message>
+    <message>
+        <location filename="../udescjoinvilletteaview/playerlistview.py" line="167"/>
+        <source>Novo</source>
+        <translation>New</translation>
+    </message>
+    <message>
+        <location filename="../udescjoinvilletteaview/playerlistview.py" line="168"/>
+        <source>Criar um novo registro</source>
+        <translation>Create a new record</translation>
+    </message>
+    <message>
+        <location filename="../udescjoinvilletteaview/playerlistview.py" line="169"/>
+        <source>Editar</source>
+        <translation>Edit</translation>
+    </message>
+    <message>
+        <location filename="../udescjoinvilletteaview/playerlistview.py" line="170"/>
+        <source>Editar o registro selecionado</source>
+        <translation>Edit the selected record</translation>
+    </message>
+    <message>
+        <location filename="../udescjoinvilletteaview/playerlistview.py" line="171"/>
+        <source>Excluir</source>
+        <translation>Delete</translation>
+    </message>
+    <message>
+        <location filename="../udescjoinvilletteaview/playerlistview.py" line="172"/>
+        <source>Excluir o registro selecionado</source>
+        <translation>Delete the selected record</translation>
+    </message>
+    <message>
+        <location filename="../udescjoinvilletteaview/playerlistview.py" line="222"/>
+        <source>Deseja sair do cadastro?</source>
+        <translation>Do you want to exit the registration?</translation>
+    </message>
+    <message>
+        <location filename="../udescjoinvilletteaview/playerlistview.py" line="228"/>
+        <source>Sim</source>
+        <translation>Yes</translation>
+    </message>
+    <message>
+        <location filename="../udescjoinvilletteaview/playerlistview.py" line="229"/>
+        <source>Não</source>
+        <translation>No</translation>
+    </message>
+</context>
 </TS>

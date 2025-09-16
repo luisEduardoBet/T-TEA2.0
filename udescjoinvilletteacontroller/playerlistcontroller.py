@@ -248,7 +248,7 @@ class PlayerListController:
             QMessageBox.warning(
                 self.view,
                 self.view.parent().get_title(),
-                "Por favor selecione um jogador para excluir.",
+                self.view.parent().tr("Por favor selecione um jogador para excluir."),
             )
             return
         player_id = int(self.view.table.item(selected[0].row(), 0).text())
@@ -273,13 +273,13 @@ class PlayerListController:
                 QMessageBox.information(
                     self.view,
                     self.view.parent().get_title(),
-                    "Jogador excluído com sucesso.",
+                    self.view.parent().tr("Jogador excluído com sucesso."),
                 )
             else:
                 QMessageBox.critical(
                     self.view,
                     self.view.parent().get_title(),
-                    "Não foi possível excluir o jogador.",
+                    self.view.parent().tr("Não foi possível excluir o jogador."),
                 )
 
     def show_player_details(self, player: Optional[Player]) -> None:

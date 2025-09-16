@@ -21,7 +21,7 @@ class PlayerEditView(QDialog, WindowConfig):
     def __init__(self, parent=None, player: Optional["Player"] = None):
         super().__init__(parent)
         self.setModal(True)  # Make dialog modal
-        action = "Editar" if player else "Novo"
+        action = self.tr("Editar") if player else self.tr("Novo")
         title = parent.parent().get_title()
         self.setup_window(
             f"{title} - {action}",  # title
@@ -38,27 +38,27 @@ class PlayerEditView(QDialog, WindowConfig):
 
         # Input fields
         self.name_input = QLineEdit()
-        self.name_input.setPlaceholderText("Nome")
+        self.name_input.setPlaceholderText(self.tr("Nome"))
 
         self.birth_date_input = QDateEdit()
         self.birth_date_input.setCalendarPopup(True)
         self.birth_date_input.setDate(QDate.currentDate())
 
         self.observation_input = QTextEdit()
-        self.observation_input.setPlaceholderText("Observação")
+        self.observation_input.setPlaceholderText(self.tr("Observação"))
         self.observation_input.setMaximumHeight(80)
 
         # Buttons
         self.ok_button = QPushButton("OK")
-        self.cancel_button = QPushButton("Cancela")
+        self.cancel_button = QPushButton(self.tr("Cancela"))
         button_layout = QHBoxLayout()
         button_layout.addWidget(self.ok_button)
         button_layout.addWidget(self.cancel_button)
 
         # Add to layout
-        layout.addRow("Nome:", self.name_input)
-        layout.addRow("Data de Nascimento:", self.birth_date_input)
-        layout.addRow("Observação:", self.observation_input)
+        layout.addRow(self.tr("Nome:"), self.name_input)
+        layout.addRow(self.tr("Data de Nascimento:"), self.birth_date_input)
+        layout.addRow(self.tr("Observação:"), self.observation_input)
         layout.addRow(button_layout)
 
         self.setLayout(layout)

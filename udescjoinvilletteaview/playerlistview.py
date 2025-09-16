@@ -107,9 +107,9 @@ class PlayerListView(QDialog, WindowConfig):
         left_layout = QVBoxLayout()
         # Search field
         search_layout = QHBoxLayout()
-        self.search_label = QLabel("Pesquisar:")
+        self.search_label = QLabel(self.tr("Pesquisar:"))
         self.search_input = QLineEdit()
-        self.search_input.setPlaceholderText("Digite o nome ou ID")
+        self.search_input.setPlaceholderText(self.tr("Digite o nome ou ID"))
         search_layout.addWidget(self.search_label)
         search_layout.addWidget(self.search_input)
 
@@ -117,7 +117,7 @@ class PlayerListView(QDialog, WindowConfig):
         self.table = QTableWidget()
         # Only ID and Name
         self.table.setColumnCount(2)
-        self.table.setHorizontalHeaderLabels(["ID", "Nome"])
+        self.table.setHorizontalHeaderLabels(["ID", self.tr("Nome")])
         self.table.horizontalHeader().setSectionResizeMode(
             QHeaderView.ResizeToContents
         )
@@ -136,27 +136,27 @@ class PlayerListView(QDialog, WindowConfig):
         # Fixed width for details panel
         details_widget.setFixedWidth(325)
         details_layout = QVBoxLayout()
-        details_layout.addWidget(QLabel("Detalhes"))
+        details_layout.addWidget(QLabel(self.tr("Detalhes")))
         # Details labels
         self.id_label = QLabel("ID: ")
-        self.name_label = QLabel("Nome: ")
-        self.birth_date_label = QLabel("Data de Nascimento: ")
-        self.observation_label = QLabel("Observação: ")
+        self.name_label = QLabel(self.tr("Nome: "))
+        self.birth_date_label = QLabel(self.tr("Data de Nascimento: "))
+        self.observation_label = QLabel(self.tr("Observação: "))
 
         # Add labels to details layout
         details_grid = QGridLayout()
         details_grid.addWidget(QLabel("ID:"), 0, 0, alignment=Qt.AlignLeft)
         details_grid.addWidget(self.id_label, 0, 1, alignment=Qt.AlignLeft)
-        details_grid.addWidget(QLabel("Nome:"), 1, 0, alignment=Qt.AlignLeft)
+        details_grid.addWidget(QLabel(self.tr("Nome:")), 1, 0, alignment=Qt.AlignLeft)
         details_grid.addWidget(self.name_label, 1, 1, alignment=Qt.AlignLeft)
         details_grid.addWidget(
-            QLabel("Data de Nascimento:"), 2, 0, alignment=Qt.AlignLeft
+            QLabel(self.tr("Data de Nascimento:")), 2, 0, alignment=Qt.AlignLeft
         )
         details_grid.addWidget(
             self.birth_date_label, 2, 1, alignment=Qt.AlignLeft
         )
         details_grid.addWidget(
-            QLabel("Observação:"), 3, 0, alignment=Qt.AlignLeft
+            QLabel(self.tr("Observação:")), 3, 0, alignment=Qt.AlignLeft
         )
         details_grid.addWidget(
             self.observation_label, 3, 1, alignment=Qt.AlignLeft
@@ -164,12 +164,12 @@ class PlayerListView(QDialog, WindowConfig):
         details_layout.addLayout(details_grid)
 
         # Buttons
-        self.new_button = QPushButton("Novo")
-        self.new_button.setToolTip("Criar um novo registro")
-        self.edit_button = QPushButton("Editar")
-        self.edit_button.setToolTip("Editar o registro selecionado")
-        self.delete_button = QPushButton("Excluir")
-        self.delete_button.setToolTip("Excluir o registro selecionado")
+        self.new_button = QPushButton(self.tr("Novo"))
+        self.new_button.setToolTip(self.tr("Criar um novo registro"))
+        self.edit_button = QPushButton(self.tr("Editar"))
+        self.edit_button.setToolTip(self.tr("Editar o registro selecionado"))
+        self.delete_button = QPushButton(self.tr("Excluir"))
+        self.delete_button.setToolTip(self.tr("Excluir o registro selecionado"))
 
         # Button layout
         button_layout = QHBoxLayout()
