@@ -316,7 +316,4 @@ Detalhes do erro: {0}</source>
         <translation></translation>
     </message>
 </context>
-
-
-
 </TS>

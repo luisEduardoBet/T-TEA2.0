@@ -5,23 +5,21 @@
     <homePage>index.html</homePage>
     <filterSection>
         <toc>
-            <section title="T-TEA Ajuda" ref="index.html">
-                <section title="Plataforma" ref="plataforma.html"></section>
-                <section title="KarTea" ref="kartea.html"></section>
+            <section title="T-TEA Ajuda" ref="pages/index.html">
+                <section title="Plataforma" ref="pages/plataforma.html"></section>
+                <section title="KarTea" ref="pages/kartea.html"></section>
+                <section title="Repetea" ref="pages/repetea.html"></section>
             </section>
         </toc>
         <keywords>
-            <keyword name="Plataforma" ref="plataforma.html"/>
-            <keyword name="KarTea" ref="kartea.html"/>
+            <keyword name="Plataforma" ref="pages/plataforma.html"/>
+            <keyword name="KarTea" ref="pages/kartea.html"/>
+            <keyword name="Repetea" ref="pages/repetea.html"/>
         </keywords>
         <files>
-            <file>index.html</file>
-            <file>plataforma.html</file>
-            <file>kartea.html</file>
-            <file>imagens/plataforma.png</file>
-            <file>imagens/ttealogo.png</file>
-            <file>imagens/kartea/kartea1.png</file>
-            <file>imagens/kartea/kartea2.png</file>
+            <file>pages/*.html</file>
+            <file>imagens/*.png</file>
+            <file>imagens/kartea/*.png</file>
         </files>
     </filterSection>
 </QtHelpProject>

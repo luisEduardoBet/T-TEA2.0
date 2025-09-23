@@ -75,6 +75,7 @@ class PlayerListController:
         self.dao = PlayerCsvDAO()
         self.player_edit_view_factory = player_edit_view_factory
 
+
     def load_players(self, search_query: str = "") -> None:
         """Load players into the table, optionally filtered by search query.
 
@@ -174,7 +175,7 @@ class PlayerListController:
                 QMessageBox.critical(
                     self.view,
                     self.view.parent().get_title(),
-                    "Falha ao adicionar um jogador.",
+                    self.view.parent().tr("Falha ao adicionar um jogador."),
                 )
 
     def handle_edit_player(self) -> None:
@@ -197,13 +198,13 @@ class PlayerListController:
             QMessageBox.warning(
                 self.view,
                 self.view.parent().get_title(),
-                "Por favor selecione um jogador para editar.",
+                self.view.parent().tr("Por favor selecione um jogador para editar."),
             )
             return
         player_id = int(self.view.table.item(selected[0].row(), 0).text())
         player = self.dao.select(player_id)
         if not player:
-            QMessageBox.critical(self.view, "Erro", "Jogador não encontrado.")
+            QMessageBox.critical(self.view, self.view.parent().tr("Erro"), self.view.parent().parent("Jogador não encontrado."))
             return
         dialog = self.player_edit_view_factory(self.view, player)
         if dialog.exec() and dialog.controller.ok_clicked:
@@ -220,13 +221,13 @@ class PlayerListController:
                 QMessageBox.information(
                     self.view,
                     self.view.parent().get_title(),
-                    "Dados do jogador atualizados.",
+                    self.view.parent().tr("Dados do jogador atualizados."),
                 )
             else:
                 QMessageBox.critical(
                     self.view,
                     self.view.parent().get_title(),
-                    "Falha ao atualizar os dados do jogador.",
+                    self.view.parent().tr("Falha ao atualizar os dados do jogador."),
                 )
 
     def delete_player(self) -> None:
@@ -259,8 +260,7 @@ class PlayerListController:
         msg_box.setWindowTitle(self.view.parent().windowTitle())
         msg_box.setText(
             self.view.parent().tr(
-                f"Confirma a exclusão do jogador?\n{player_name}"
-            )
+                "Confirma a exclusão do jogador?\n") + player_name
         )
         msg_box.setStandardButtons(QMessageBox.Yes | QMessageBox.No)
         msg_box.setDefaultButton(QMessageBox.No)
