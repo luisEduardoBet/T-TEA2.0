@@ -8,13 +8,13 @@ from PySide6.QtGui import QIcon
 from PySide6.QtWidgets import QApplication, QMessageBox
 
 # Local module import
-from udescjoinvilletteaapp import AppConfig, TTeaApp
-from udescjoinvilletteacontroller import LanguageController
-from udescjoinvilletteafactory import ViewFactory
-from udescjoinvillettealog import Log
-from udescjoinvilletteamodel import Language
-from udescjoinvilletteautil import PathConfig
-from udescjoinvilletteaview import SplashScreen
+from app import AppConfig, TTeaApp
+from controller import LanguageController
+from factory import ViewFactory
+from log import Log
+from model import Language
+from util import PathConfig
+from view import SplashScreen
 
 
 def show_error_message(
