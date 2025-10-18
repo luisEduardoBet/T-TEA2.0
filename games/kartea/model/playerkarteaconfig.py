@@ -92,8 +92,8 @@ class PlayerKarteaConfig:
     Examples
     --------
     >>> from datetime import datetime
-    >>> from udescjoinvilletteamodel import Player
-    >>> from udescjoinvilletteagames.kartea.model import (KarteaPhase,
+    >>> from tteamodel import Player
+    >>> from tteagames.kartea.model import (KarteaPhase,
     ...                                                  KarteaPhaseLevel,
     ...                                                  PlayerKarteaSession)
     >>> config = PlayerKarteaConfig(player=Player(id=1, name="John",

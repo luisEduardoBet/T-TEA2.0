@@ -1,9 +1,9 @@
 """
-udescjoinvilletteaview
+tteaview
 
 A Python package for visualizing and editing data from the T-TEA platform,
 supporting internationalization and player data management. Developed by the
-Larva UDESC team.
+  team.
 
 This package provides tools for creating visualizations, managing player
 profiles, and supporting multiple languages for the T-TEA platform.
@@ -34,9 +34,9 @@ SplashScreen
 
 Notes
 -----
-This package is maintained by the Larva UDESC team and is under active
+This package is maintained by the   team and is under active
 development. Contributions and bug reports are welcome at:
-https://github.com/larva-udesc/udesc_ttea_view
+https://github.com/-/_ttea_view
 """
 
 # Define the __all__ variable
@@ -50,7 +50,7 @@ __all__ = [
 
 __version__ = "1.0.0"
 __date__ = "2025-12-25"
-__author__ = "Larva UDESC"
+__author__ = " "
 __license__ = "MIT License"
 
 # Import the submodules

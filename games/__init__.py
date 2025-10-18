@@ -1,5 +1,5 @@
 """
-udescjoinvilletteagames
+
 
 A Python package for games in T-TEA console.
 
@@ -23,12 +23,12 @@ PlayerKarteaConfigCsvDAO
 
 Notes
 -----
-This package is maintained by the Larva UDESC team and is under active
+This package is maintained by the   team and is under active
 development. Contributions and bug reports are welcome at:
-https://github.com/larva-udesc/udesc_ttea_view
+https://github.com/-/_ttea_view
 """
 
 __version__ = "1.0.0"
 __date__ = "2025-12-25"
-__author__ = "Larva UDESC"
+__author__ = " "
 __license__ = "MIT License"

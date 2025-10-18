@@ -1,8 +1,8 @@
 """
-udescjoinvillettealog
+ttealog
 
 A Python package for log functions in the T-TEA platform,
-supporting logging. Developed by the Larva UDESC team.
+supporting logging. Developed by the   team.
 
 This package provides tools for logging.
 
@@ -25,9 +25,9 @@ Log
 
 Notes
 -----
-This package is maintained by the Larva UDESC team and is under active
+This package is maintained by the   team and is under active
 development. Contributions and bug reports are welcome at:
-https://github.com/larva-udesc/udesc_ttea_view
+https://github.com/-/_ttea_view
 """
 
 # Define the __all__ variable
@@ -37,7 +37,7 @@ __all__ = [
 
 __version__ = "1.0.0"
 __date__ = "2025-12-25"
-__author__ = "Larva UDESC"
+__author__ = " "
 __license__ = "MIT License"
 
 # Import the submodules

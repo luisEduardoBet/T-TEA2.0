@@ -1,8 +1,8 @@
 """
-udescjoinvilletteamenu
+tteamenu
 
 A Python package for menu handling in the T-TEA platform.
-Developed by the Larva UDESC team.
+Developed by the   team.
 """
 
 # Define the __all__ variable
@@ -12,7 +12,7 @@ __all__ = [
 
 __version__ = "1.0.0"
 __date__ = "2025-12-25"
-__author__ = "Larva UDESC"
+__author__ = " "
 __license__ = "MIT License"
 
 # Import the submodule

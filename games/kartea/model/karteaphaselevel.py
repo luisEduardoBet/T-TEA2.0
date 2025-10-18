@@ -61,7 +61,7 @@ class KarteaPhaseLevel:
 
     Examples
     --------
-    >>> from udescjoinvilletteagames.kartea.model.karteaphase import KarteaPhase
+    >>> from tteagames.kartea.model.karteaphase import KarteaPhase
     >>> phase = KarteaPhase(id=1, level_list=[])
     >>> level = KarteaPhaseLevel(id=1, phase=phase, interval=1.5, num_obj=10,
     ...                          obj_type=[1, 2, 3])

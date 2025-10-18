@@ -59,14 +59,14 @@ class PathConfig:
     root = Path.cwd()
     log_dir = root / "log"
     players_dir = root / "players"
-    games_dir = root / "udescjoinvilletteagames"
+    games_dir = root / "tteagames"
     assets_dir = root / "assets"
     translations_dir = root / "translations"
     images_dir = assets_dir / "images"
     icons_dir = assets_dir / "icons"
     helps_dir = root / "help"
     helps_dir_pt = helps_dir / "pt"
-    ui_dir = root / "udescjoinvilletteaui"
+    ui_dir = root / "tteaui"
 
     @classmethod
     def create_directories(cls) -> None:

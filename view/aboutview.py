@@ -99,7 +99,7 @@ class AboutView(QDialog, WindowConfig):
             self.tr(
                 "<b>T-TEA</b> é um console para exergames de Chão Interativo "
                 "voltados ao público com Transtorno do Espectro Autista (TEA), "
-                "mas não exclusivamente. Desenvolvido pela UDESC Joinville - Larva."
+                "mas não exclusivamente. Desenvolvido pela "
             )
         )
         project_description.setWordWrap(True)
@@ -123,7 +123,7 @@ class AboutView(QDialog, WindowConfig):
         link_label.setOpenExternalLinks(True)
         link_label.setText(
             (
-                "<a href='https://udescmove2learn.wordpress.com/2023/06/26/t-tea/'>{}</a>"
+                "<a href=''>{}</a>"
             ).format(self.tr("Saiba mais sobre a Plataforma!"))
         )
         link_label.setAlignment(Qt.AlignCenter)
@@ -136,12 +136,12 @@ class AboutView(QDialog, WindowConfig):
         developers_text = (
             "<b>{}</b><br>"
             "<span style='font-size: 10px;'>"
-            "1. Marcelo da Silva Hounsell<br>"
-            "2. Andre Bonetto Trindade<br>"
-            "3. Gabriel Brunelli Pereira<br>"
-            "4. Marlow Rodrigo Becker Dickel<br>"
-            "5. Luis Eduardo Bet<br>"
-            "6. Alexandre Altair de Melo<br>"
+            "1. <br>"
+            "2. <br>"
+            "3. <br>"
+            "4. <br>"
+            "5. <br>"
+            "6. <br>"
             "<br>"
             "<i>{}: 2021 - {}</i>"
             "</span>"

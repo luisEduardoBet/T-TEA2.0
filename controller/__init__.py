@@ -1,9 +1,8 @@
 """
-udescjoinvilletteacontroller
 
 A Python package for controller classes from the T-TEA platform,
 supporting controller logic and data management from views.
-Developed by the Larva UDESC team.
+Developed by the team.
 
 This package provides the controller classes for views, for the T-TEA platform.
 
@@ -29,9 +28,8 @@ PlayerListController
 
 Notes
 -----
-This package is maintained by the Larva UDESC team and is under active
+This package is maintained by the team and is under active
 development. Contributions and bug reports are welcome at:
-https://github.com/larva-udesc/udesc_ttea_view
 """
 
 # Define the __all__ variable
@@ -43,7 +41,7 @@ __all__ = [
 
 __version__ = "1.0.0"
 __date__ = "2025-12-25"
-__author__ = "Larva UDESC"
+__author__ = ""
 __license__ = "MIT License"
 
 # Import the submodules

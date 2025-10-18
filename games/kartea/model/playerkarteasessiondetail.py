@@ -67,8 +67,8 @@ class PlayerKarteaSessionDetail:
 
     Examples
     --------
-    >>> from udescjoinvilletteagames.kartea.model import PlayerKarteaSession
-    >>> from udescjoinvilletteamodel.player import Player
+    >>> from tteagames.kartea.model import PlayerKarteaSession
+    >>> from tteamodel.player import Player
     >>> from datetime import datetime
     >>> session = PlayerKarteaSession(id=1, player=Player(id=1, name="John",
     ...                                                  birth_date=datetime(2000, 1, 1)),

@@ -21,7 +21,7 @@ class AppConfig:
     GAMES_APP : list
         List of supported game names, e.g., ["KarTEA"].
     ICON_APP : str
-        Path to the application icon file (larva.ico), resolved by
+        Path to the application icon file (.ico), resolved by
         `PathConfig.icon`.
     LOGO_APP : str
         Path to the application logo file (ttealogo.png), resolved by
@@ -73,7 +73,7 @@ class AppConfig:
     Accessing the application icon path:
     >>> config = AppConfig()
     >>> print(config.ICON_APP)
-    '/path/to/larva.ico'  # Path resolved by PathConfig
+    '/path/to/.ico'  # Path resolved by PathConfig
 
     Using the default date format:
     >>> from datetime import datetime
@@ -86,7 +86,7 @@ class AppConfig:
         "KarTEA",
     ]
 
-    ICON_APP: str = PathConfig.icon("larva.ico")
+    ICON_APP: str = PathConfig.icon(".ico")
     LOGO_APP: str = PathConfig.image("ttealogo.png")
     PLATAFORM_SUFIX: str = "TEA"
     PLATAFORM_MANUAL: str = "Manual"
