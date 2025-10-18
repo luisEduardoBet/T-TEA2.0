@@ -3,35 +3,35 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
-        <entry key="\Jogadores\Gabriel_KarTEA_config.csv">
+        <entry key="\Jogadores\_KarTEA_config.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\Jogadores\Gabriel_KarTEA_detalhado.csv">
+        <entry key="\Jogadores\_KarTEA_detalhado.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\Jogadores\Gabriel_KarTEA_sessao.csv">
+        <entry key="\Jogadores\_KarTEA_sessao.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\Jogadores\Gabriel_RepeTEA.csv">
+        <entry key="\Jogadores\_RepeTEA.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\Jogadores\Gabriel_RepeTEA_config.csv">
+        <entry key="\Jogadores\_RepeTEA_config.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />

@@ -10,7 +10,7 @@ setup(
     name="T-TEA",
     version="2.0",
     description="T-TEA",
-    download_url="https://udescmove2learn.wordpress.com/2023/06/26/t-tea/",
+    download_url="",
     options={"build_exe": build_exe_options},
     executables=[Executable("TTEA_menu.py")],
 )

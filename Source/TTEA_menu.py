@@ -303,12 +303,12 @@ B = tk.Button(menu_frame, text ="Jogar", command = JogarCallback)
 
 B.pack()
 
-# Teste-Logo UDESC
-imageUdesc = Image.open("Assets/Logos UDESC Larva.png")
-photoUdesc = ImageTk.PhotoImage(imageUdesc)
-imagemUdesc = tk.Label(menu_frame, text = "Logo Udesc", image = photoUdesc)
-imagemUdesc.imageUdesc = photoUdesc
-imagemUdesc.pack(pady=10)
+# Teste-Logo 
+image = Image.open("Assets/Logos  .png")
+photo = ImageTk.PhotoImage(image)
+imagem = tk.Label(menu_frame, text = "Logo ", image = photo)
+imagem.image = photo
+imagem.pack(pady=10)
 
 menu_frame.pack()
 
