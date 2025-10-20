@@ -7,7 +7,7 @@
     <title>Plataforma</title>
     <style>
         body {
-            font-size: 12pt;
+            font-size: 15pt;
             font-family: Helvetica, Arial, sans-serif;
         }
 
@@ -58,6 +58,186 @@
     <p>
         <img src="../imagens/plataforma.png" alt="Plataforma">
     </p>
+    <h2>Requisitos</h2>
+    <ul>
+	    <li> Computador/notebook com Sistema Operacional Windows </li>
+        <li> Projetor de resolução 800x600 </li>
+        <li> Webcam com lente </li>
+        <li> Pacote de instalação do jogo </li>
+        <li> Um responsável (especialista) para acompanhar o uso do jogo </li>
+    </ul>
+
+    <h1>Manual de Funcionamento</h1>
+    <h2>Hardware: Projetor</h2>
+    <h3>Requisitos:</h3>
+    <p>
+        <ul>
+            <li> Deve estar direcionado ao chão, com a projeção invertida verticalmente </li>
+            <li> Resolução de funcionamento: 800x600 </li>
+            <li> Usar o modo "Estender" (Tecla Windows + P -> Estender) </li>
+        </ul>
+    </p>
+    <h3>Recomendações:</h3>
+    <p>
+        <ul>
+            <li> Inclinação do projetor: aproximadamente 45 graus </li>
+            <li> Formato: não precisa estar exatamente retangular, porém quanto menos trapezoidal, melhor </li>
+            <li> Tamanho: depende do jogo, mas recomendamos pelo menos 1,5m de largura em sua área superior </li>
+            <li> Ambiente: baixa luminosidade, chão não reflexivo, claro e não escorregadio </li>
+        </ul>
+    </p>
+    <p>
+        <img src="../imagens/projetor.png" alt="Projeção">
+    </p>
+    <h2>Hardware: Câmera</h2>
+    <h3>Requisitos:</h3>
+    <p>
+        <ul>
+            <li> A câmera deve captar toda a projeção bem como todo o corpo do jogador</li>
+            <li> Projetar em superfície plana, sem degraus</li>
+    </p>
+    <p>
+        <img src="../imagens/captura.png" alt="Captura">
+    </p>
+    <p>
+        <ul>
+            <li> Pode ser necessário o uso de uma lente do tipo grande angular ou "olho de peixe"</li>
+        </ul>
+    </p>
+    <p>
+        <img src="../imagens/lente.png" alt="Lente">
+    </p>
+    <h2>Console T-TEA: Calibração</h2>
+    <p>
+        <ul>
+            <li> É necessário calibrar a plataforma a cada novo uso, independente do jogo a ser utilizado.</li>
+        </ul>
+    </p>
+    <p>
+        1- Será exiboda uma janela de avisos. Aperte a tecla "C" para iniciar Continuar.
+    </p>
+    <p>
+        <img src="../imagens/calibracao1.png" alt="Calibração 1">
+    </p>
+    <p>
+        2- Serão exibidas na tela do computador: 
+
+        a) Tela de controle
+        b) Mapa de calibração (invertido verticalmente) 
+    </p>
+    <p>
+        <img src="../imagens/calibracao2.png" alt="Calibração 2 - a e b">   
+    </p>
+    <p>
+        3- Arraste o Mapa de calibração para a projeção no chão, de forma que cubra a área de projeção
+    </p>
+    <p>
+        <img src="../imagens/calibracao3.png" alt="Calibração 3">
+    </p>
+    <p>
+        4- Na Tela de Controle (computador), clique nos 4 triângulos azuis na ordem indicada:
+    </p>
+    <p>
+        <img src="../imagens/calibracao4.png" alt="Calibração 4">
+    </p>
+    <p>
+        5- Ao terminar, será exibida a janela de sucesso. Clique na janela para selecioná-la e aperte a tecla Q para voltar ao menu.
+    </p>
+    <p>
+        <img src="../imagens/calibracao5.png" alt="Calibração 5">
+    </p>
+    <h2>Console T-TEA: Cadastro do Jogador</h2> 
+    <p>
+        1- No menu principal, ao clicar em "Cadastrar Novo Jogador", uma nova janela será exibida.
+        2- Preencha os dados do jogador e clique em "Cadastrar Novo Jogador".
+    </p>
+    <h2>Console T-TEA: Como jogar</h2>
+    <p>
+        IMPORTANTE: Verifique se a calibração da câmera e o cadastro do jogador foram realizados antes de acessar o jogo.
+    </p>
+    <p> 
+        <img src="../imagens/comojogar1.png" alt="Cadastrar novo jogador">
+    </p>
+    <p>
+        A fase e nível atingido pelo jogador na última sessão são carregados automaticamente (caso seja a primeira sessão, ambos valores serão 1).
+    </p>
+    <p>
+        <img src="../imagens/comojogar2.png" alt="Selecionando o jogo">
+    </p>
+    <h2>Solucionando Problemas!</h2>
+    <h3>O programa não abre/fecha sozinho</h3>
+    <p>
+        <ul>
+            <li>Atualize o componente "Visual C++ Redistributable" do Windows para a versão mais recente.</li>
+            <ul>
+                <li>Link para download: <a href="https://learn.microsoft.com/pt-br/cpp/windows/latest-supported-vc-redist?view=msvc-170">https://learn.microsoft.com/pt-br/cpp/windows/latest-supported-vc-redist?view=msvc-170</a></li>
+                <li>download direto: <a href="https://aka.ms/vs/17/release/vc_redist.x64.exe">https://aka.ms/vs/17/release/vc_redist.x64.exe</a></li>
+            </ul>
+        </ul>
+    </p>
+    <h3>Câmera não exibe a imagem</h3>
+    <p>
+        <ul>
+            <li>Caso haja duas câmeras conectadas, o jogo utilizará a considerada como primeira pelo Windows</li>
+            <li>Para Notebooks:</li>
+                <ul>
+                    <li>A câmera embutida geralmente será a escolhida pelo jogo, assim desative-a para usar outra (em cada sistema, essa ação é diferente, então caso não saiba como fazer, pesquise no Google conforme sua versão do Windows)</li>
+                </ul>
+        </ul>
+    </p>
+    <h3>Não está reconhecendo o jogador</h3>
+    <p>
+        <ul>
+            <li>Altura do jogador: crianças muito pequenas podem não ser reconhecidas corretamente. </li>
+            <li>Iluminação: ambientes muito claros ou muito escuros podem dificultar o reconhecimento do jogador. </li>
+            <li>Cor da roupa do jogador</li>
+                <ul>
+                    <li>Roupas muito claras (branco, amarelo claro) ou muito escuras (preto, azul marinho) podem dificultar o reconhecimento do jogador.</li>
+                    <li>Roupas com muitas estampas ou padrões podem confundir o sistema de reconhecimento.</li>
+                </ul>
+            <li>Movimentação ou objetos na área capturada pela câmera podem interferir no reconhecimento do jogador.</li>
+            <li>Câmera não captura todo o jogador: ajustar a posição da câmera ou utilizar uma lente apropriada, como a "olho de peixe".</li>
+        </ul>
+    </p>
+    <h3>O jogo não cabe/é muito maior do que a tela de projeção</h3>
+    <p>
+        <ul>
+            <li>Verifique se a resolução do projetor está configurada para 800x600.</li>
+            <li>Verifique se o modo de exibição do Windows está definido como "Estender" (Tecla Windows + P -> Estender).</li>
+        </ul>
+    </p>
+    <h3>Meu projetor não aceita a resolução 800x600, apenas maiores</h3>
+    <p>
+        <ul>
+            <li>Utilize o menor tamanho 4:3 disponível, como 1024x768 (não usar widescreen que é 16:9).</li>
+            <li>Siga os seguintes passos:</li>
+                <ul>
+                    <li>Na calibração, coloque o Mapa de Calibração encostado no topo e à direita da projeção</li>
+                    <li>Ao jogar, coloque a Tela de Jogo no mesmo local onde foi colocado o Mapa de Calibração​</li>
+        </ul>
+    </p>
+    <h3>Jogador/Movimento do jogador não é reconhecido corretamente</h3>
+    <p>
+        <ul>
+            <li>Verifique se não há outra pessoa ou objeto sendo reconhecido no lugar do jogador.</li>
+            <li>Verifique se há contraste entre o fundo do ambiente e a vestimenta do jogador</li>
+            <li>Refaça a calibração, seguindo os passos no início desta página e se atentando à sequência das ações.</li>
+        </ul>
+    </p>
+    <h3>RepeTEA: tela de jogo está preta</h3>
+    <p>
+        <ul>
+            <li>Verifique se na tela de captura não há outra pessoa ou objeto sendo reconhecido no lugar do jogador.</li>
+            <li>Verifique se o jogador está posicionado corretamente na parte inferior da tela de projeção.</li>
+        </ul>
+    </p>
+    <h3>Os dados da sessão de jogo não estão sendo salvos</h3>
+    <p>
+        <ul>
+            <li>Verifique se durante a sessão os arquivos de dados não estão abertos em outro programa (e.g. Excel).</li>
+            <li>Verifique se o jogo foi fechado.</li>
+            <li>Verifique de o jogo está sendo finalizado corretamente, conforme esse tutorial</li>
+        </ul>
 </body>
 
 </html>
