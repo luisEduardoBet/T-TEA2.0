@@ -5,6 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KarTea</title>
+    <style>
+        body {
+            font-size: 20pt;
+            font-family: Helvetica, Arial, sans-serif;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
@@ -18,10 +32,120 @@
         <li>Coordenação motora = deslocar-se no momento certo;</li>
         <li>Lateralidade = deslocar-se para o lado certo.</li>
     </ul>
-    Tudo isso em um ambiente virtual que simula uma estrada com 3 pistas e um carro, que representa o jogador. Sucumba teste test.
+    Tudo isso em um ambiente virtual que simula uma estrada com 3 pistas e um carro, que representa o jogador.
     </p>
     <p>
         <img src="../imagens/kartea/kartea1.png" alt="KarTea">
+    </p>
+    <p>
+        A tela exibida ao jogador possui as seguintes informações:
+    </p>
+    <p>
+        <img src="../imagens/kartea/kartea3.png" alt="KarTea Tela">
+    </p>
+    <p>
+        O jogador/carro deve mover-se lateralmente entre as pistas, para:
+        <ul>
+            <li>Capturar alvos;</li>
+        </ul>
+        <img src="../imagens/kartea/kartea4.png" alt="KarTea Capturar Alvo">
+        <ul>
+            <li>Desviar de obstáculos.</li>
+        </ul>
+        <img src="../imagens/kartea/kartea5.png" alt="KarTea Evitar Obstáculo">
+    </p>
+    <h3>Variação da dificuldade: Fases</h3>
+    <p>
+        O jogo possui 3 Fases:
+        <ul>
+            <li>Fase 1: Só Alvos (fácil interação - estar na pista certa);</li>
+            <li>Fase 2: Só obstáculos (média interação - evitar a pista errada);</li>
+            <li>Fase 3: Ambos - Alvos e Obstáculos (difícil interação - mecânicas alternantes)</li>    
+        </ul>
+        <img src="../imagens/kartea/kartea2.png" alt="KarTea Fases">
+    </p>
+    <h3>Variação da dificuldade: Níveis</h3>
+    <p>
+        Cada fase possui 6 níveis, cuja variação de dificuldade depende de dois parâmetros "Sérios":
+        <ul>
+            <li>1: TI - Tempo de intervalo entre objetos (atenção e concentração);</li>
+            <li>2: DM - Distância máxima de mudança de pista (motor);</li>
+        </ul>
+        Tempo de duração de cada nível: 2 minutos.
+    </p>
+    <p>
+        <img src="../imagens/kartea/kartea6.png" alt="KarTea Níveis">   
+    </p>
+    <h3>Feedbacks</h3>
+    <p>
+        O jogo emitirá feedbacks sonoros e visuais,indicando sucesso ou falha:
+    </p>
+    <p>
+        <img src="../imagens/kartea/kartea7.png" alt="KarTea Feedbacks">
+    </p>
+    <p>
+        Uma linha de chegada representa o final da fase (final do tempo):
+    </p>
+    <p>
+        <img src="../imagens/kartea/kartea8.png" alt="KarTea Linha de Chegada">
+    </p>
+    <p>
+        Ao término da fase, o jogador receberá um resumo de seu desempenho:
+    </p>
+    <p>
+        <img src="../imagens/kartea/kartea9.png" alt="KarTea Resumo">
+    </p>
+    <h4>Pontuação</h4>
+    <p>
+        Inspirada no protocolo Análise Aplicada do Comportamento (ABA):
+        <ul>
+            <li>+10 pontos por ação correta realizada;
+                - coletar alvo ou evitar obstáculo.
+            </li>
+            <li>+5 pontos por mudança de faixa;
+                - valoriza o desempenho motor, independente da ação estar correta.
+            </li>
+            <li>Não há perda de pontos (só reforço +).</li>
+        </ul>
+    </p>
+    <h4>Transição automática de níveis</h4>
+    <p>
+        Baseada no desempenho do jogador:
+        <ul>
+            <li>Se o jogador atingir 75% ou mais da pontuação máxima possível no nível atual, ele avança para o próximo nível;</li>
+            <li>Se o jogador não atingir 25% da pontuação máxima possível, ele retorna ao nível anterior;</li>
+            <li>Se o jogador estiver entre 25% e 75%, ele permanece no mesmo nível.</li>
+        </ul>
+    </p>
+    <p>
+        Para jogar a próxima fase, basta clicar em "Jogar" na tela de resumo e a próxima fase, relativa ao desempenho na fase concluída, começará automaticamente.
+        <img src="../imagens/kartea/kartea10.png" alt="KarTea Jogar Próxima Fase">
+    </p>
+    <h4>Painel de Controle</h4>
+    <p>
+        <ul>
+            <li>Habilitar/Desabilitar HUD;</li>
+                <img src="../imagens/kartea/kartea-controles1.png" alt="KarTea botões HUD">
+            <li>Feedbacks: Habilita ou desabilita os feedbacks sonoros e visuais do jogo;</li>
+                <img src="../imagens/kartea/kartea-controles2.png" alt="KarTea botões Feedbacks">
+            <li>Retroceder o nível de jogo; </li>
+                <img src="../imagens/kartea/kartea-controles3.png" alt="KarTea botões Retroceder Nível">
+            <li>Avançar o nível de jogo; </li>
+                <img src="../imagens/kartea/kartea-controles4.png" alt="KarTea botões Avançar Nível">
+            <li>Pausar o jogo; </li>
+                <img src="../imagens/kartea/kartea-controles5.png" alt="KarTea botões Pausar Jogo">
+        </ul>
+    </p>
+    <h4>Encerramento</h4>
+    <p>
+        Para encerrar a sessão, clique em "Sair" na tela de resumo ou na tela de pausa.
+    </p>
+    <p> 
+        <img src="../imagens/kartea/kartea11.png" alt="KarTea Sair">
+    </p>
+    <h4>ATENÇÃO</h4>
+    <p>
+        Os dados da sessão só serão salvos se o jogo for encerrado pela tela de resumo ou pela tela de pausa. Caso o programa seja fechado de outra forma, os dados da sessão atual serão perdidos.
     </p>
 </body>
 
