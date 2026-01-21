@@ -20,32 +20,32 @@ clock = pygame.time.Clock()
 retangulo_tela = pygame.Rect(0, 400, LARGURA, ALTURA/3)
 
 # --- FONTES E TEXTOS ---
-fonte_jogo = pygame.font.Font('fontes/8BIT.TTF', 30)
-fonte_contagem = pygame.font.Font('fontes/8BIT.TTF', 100)
-fonte_titulo = pygame.font.Font('fontes/DIOGENES.ttf', 100)
+fonte_jogo = pygame.font.Font('assets/fontes/8BIT.TTF', 30)
+fonte_contagem = pygame.font.Font('assets/fontes/8BIT.TTF', 100)
+fonte_titulo = pygame.font.Font('assets/fontes/DIOGENES.ttf', 100)
 texto_titulo = fonte_titulo.render('HerPULEs', True, (204, 51, 0))
 
-fonte_gameover = pygame.font.Font('fontes/8BIT.TTF', 80)
+fonte_gameover = pygame.font.Font('assets/fontes/8BIT.TTF', 80)
 texto_gameover = fonte_gameover.render('GAME OVER', True, (0, 0, 0))
 texto_rect = texto_gameover.get_rect(center=(LARGURA//2, ALTURA//4))
 
 # botões
-botao_iniciar = pygame.image.load("Imagens/iniciar.png").convert_alpha()
+botao_iniciar = pygame.image.load("assets/Imagens/iniciar.png").convert_alpha()
 botao_iniciar = pygame.transform.scale(botao_iniciar, (200, 80))
 botao_rect = botao_iniciar.get_rect(center=(LARGURA / 2, ALTURA - 70))
 
 
 # Botão de pular
-botao_pular = pygame.image.load("Imagens/pular.png").convert_alpha()
+botao_pular = pygame.image.load("assets/Imagens/pular.png").convert_alpha()
 botao_pular = pygame.transform.scale(botao_pular, (250, 100))  
 botao_pular_rect = botao_pular.get_rect(center=(LARGURA / 2 + 200, ALTURA - 70))  # Centralizado e mais à direita
 
 # Botão de abaixar
-botao_abaixar = pygame.image.load("Imagens/abaixar.png").convert_alpha()
+botao_abaixar = pygame.image.load("assets/Imagens/abaixar.png").convert_alpha()
 botao_abaixar = pygame.transform.scale(botao_abaixar, (250, 100))  
 botao_abaixar_rect = botao_abaixar.get_rect(center=(LARGURA / 2 - 200, ALTURA - 70))  # Centralizado e mais à esquerda
 
-botao_reiniciar = pygame.image.load("Imagens/reiniciar.png").convert_alpha()
+botao_reiniciar = pygame.image.load("assets/Imagens/reiniciar.png").convert_alpha()
 botao_reiniciar = pygame.transform.scale(botao_reiniciar, (200, 100))
 botao_reiniciar_rect = botao_reiniciar.get_rect(center=(LARGURA // 2,  ALTURA // 2 + 5))
 
@@ -54,11 +54,11 @@ contagem_numero = 3
 contagem_timer = pygame.USEREVENT + 2
 ultimo_numero_contagem = 0
 
-fundo = pygame.image.load('Imagens/fundo.jpg').convert()
+fundo = pygame.image.load('assets/Imagens/fundo.jpg').convert()
 fundo = pygame.transform.scale(fundo, (LARGURA, ALTURA))
 fundo.set_alpha(150)
 
-imagem_menu = pygame.image.load('Imagens/herpules.png').convert_alpha()
+imagem_menu = pygame.image.load('assets/Imagens/herpules.png').convert_alpha()
 imagem_menu = pygame.transform.scale(imagem_menu, (LARGURA//2, ALTURA//2))
 fundo.set_alpha(150)
 # ----------------------------------------
@@ -72,15 +72,15 @@ grupo_obstaculos = pygame.sprite.Group()
 chao = Chao(y_pos=400, vel=5)
 ceu = Ceu(vel=2, largura_tela=LARGURA)
 
-pygame.mixer.music.load('sons/musica.mp3')
+pygame.mixer.music.load('assets/sons/musica.mp3')
 pygame.mixer.music.play(-1)
 music_volume = 0.8
 pygame.mixer.music.set_volume(music_volume)
 
-som_morte = pygame.mixer.Sound('sons/morte.wav')
+som_morte = pygame.mixer.Sound('assets/sons/morte.wav')
 som_morte.set_volume(0.3)
 
-pulo = pygame.mixer.Sound('sons/pulo.wav')
+pulo = pygame.mixer.Sound('assets/sons/pulo.wav')
 pulo.set_volume(0.3)
 
 SPAWN_OBSTACULO = pygame.USEREVENT + 1
@@ -168,7 +168,7 @@ while rodando:
 
     if estado_jogo == 'menu':
 
-        hercules_normal = pygame.image.load("Imagens/hercules-parado.png").convert_alpha()
+        hercules_normal = pygame.image.load("assets/Imagens/hercules-parado.png").convert_alpha()
         altura = hercules_normal.get_height() * 3
         largura = hercules_normal.get_width() * 3
         hercules_normal = pygame.transform.scale(hercules_normal, (largura, altura))

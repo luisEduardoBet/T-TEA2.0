@@ -5,6 +5,7 @@ sonar-project.properties
 *.gitignore
 *.ini
 env/
+.venv/
 *.scannerwork
 *.csv
 *.json

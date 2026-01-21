@@ -1,22 +1,22 @@
 import pygame
 pygame.mixer.init()
 
-som_pulo = pygame.mixer.Sound('sons/pulo.wav')
+som_pulo = pygame.mixer.Sound('assets/sons/pulo.wav')
 som_pulo.set_volume(0.8)
 
 class Hercules(pygame.sprite.Sprite):
     def __init__(self, pos) -> None:
         super().__init__()
 
-        self.image = pygame.image.load("Imagens/hercules-parado.png")
+        self.image = pygame.image.load("assets/Imagens/hercules-parado.png")
         altura = self.image.get_height() *3
         largura = self.image.get_width() *3
 
-        self.imagens_run = [pygame.transform.scale(pygame.image.load("Imagens/hercules-correndo1.png").convert_alpha(),(altura,largura)),pygame.transform.scale(pygame.image.load("Imagens/hercules-correndo2.png").convert_alpha(),(altura,largura))]
-        self.imagem_pulo = pygame.transform.scale(pygame.image.load("Imagens/hercules-pulando.png").convert_alpha(),(altura,largura))
-        self.imagem_abaixa = [pygame.transform.scale(pygame.image.load("Imagens/hercules-abaixa1.png").convert_alpha(),(altura,largura)),pygame.transform.scale(pygame.image.load("Imagens/hercules-abaixa2.png").convert_alpha(),(altura,largura))]
-        self.imagem_morto = pygame.transform.scale(pygame.image.load("Imagens/hercules-mortinho.png").convert_alpha(),(altura,largura))
-        self.imagem_parado = pygame.transform.scale(pygame.image.load("Imagens/hercules-parado.png").convert_alpha(),(altura,largura))
+        self.imagens_run = [pygame.transform.scale(pygame.image.load("assets/Imagens/hercules-correndo1.png").convert_alpha(),(altura,largura)),pygame.transform.scale(pygame.image.load("assets/Imagens/hercules-correndo2.png").convert_alpha(),(altura,largura))]
+        self.imagem_pulo = pygame.transform.scale(pygame.image.load("assets/Imagens/hercules-pulando.png").convert_alpha(),(altura,largura))
+        self.imagem_abaixa = [pygame.transform.scale(pygame.image.load("assets/Imagens/hercules-abaixa1.png").convert_alpha(),(altura,largura)),pygame.transform.scale(pygame.image.load("assets/Imagens/hercules-abaixa2.png").convert_alpha(),(altura,largura))]
+        self.imagem_morto = pygame.transform.scale(pygame.image.load("assets/Imagens/hercules-mortinho.png").convert_alpha(),(altura,largura))
+        self.imagem_parado = pygame.transform.scale(pygame.image.load("assets/Imagens/hercules-parado.png").convert_alpha(),(altura,largura))
 
         self.image = pygame.transform.scale(self.image.convert_alpha(),(altura,largura))
 

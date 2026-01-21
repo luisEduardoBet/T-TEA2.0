@@ -5,7 +5,7 @@ class Chao(pygame.sprite.Sprite):
         super().__init__()
 
         # Carregar imagem do chão
-        self.image = pygame.transform.scale(pygame.image.load("Imagens/chao.png").convert_alpha(),(16*4,16*4))
+        self.image = pygame.transform.scale(pygame.image.load("assets/Imagens/chao.png").convert_alpha(),(16*4,16*4))
         self.rect = self.image.get_rect(topleft=(0, y_pos))
 
 

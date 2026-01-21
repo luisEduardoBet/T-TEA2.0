@@ -3,7 +3,7 @@ import random
 
 class Ceu:
     def __init__(self, vel, largura_tela):
-        original_nuvem_image = pygame.image.load("Imagens/nuvem.png").convert_alpha()
+        original_nuvem_image = pygame.image.load("assets/Imagens/nuvem.png").convert_alpha()
         self.nuvens_data = []
         num_nuvens = 7
         current_x = 0
@@ -41,7 +41,7 @@ class Ceu:
                 nuvem['rect'].x = max_right + spacing
 
                 scale_factor = random.uniform(3, 6)
-                original_nuvem_image = pygame.image.load("Imagens/nuvem.png").convert_alpha()
+                original_nuvem_image = pygame.image.load("assets/Imagens/nuvem.png").convert_alpha()
                 scaled_width = int(original_nuvem_image.get_width() * scale_factor)
                 scaled_height = int(original_nuvem_image.get_height() * scale_factor)
                 nuvem['image'] = pygame.transform.scale(original_nuvem_image, (scaled_width, scaled_height))
