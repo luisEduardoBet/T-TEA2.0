@@ -69,8 +69,6 @@ class Ui_PlayerListView(object):
         self.tbl_player.horizontalHeader().setStretchLastSection(True)
 
         self.lay_left.addWidget(self.tbl_player)
-
-
         self.mainLayout.addLayout(self.lay_left)
 
         self.lay_right = QVBoxLayout()
@@ -78,6 +76,7 @@ class Ui_PlayerListView(object):
         self.tab_player = QTabWidget(PlayerListView)
         self.tab_player.setObjectName(u"tab_player")
         self.lay_detail = QWidget()
+
         self.lay_detail.setObjectName(u"lay_detail")
         self.detailsLayout = QVBoxLayout(self.lay_detail)
         self.detailsLayout.setObjectName(u"detailsLayout")
@@ -127,6 +126,12 @@ class Ui_PlayerListView(object):
 
         self.lbl_observation_value = QLabel(self.lay_detail)
         self.lbl_observation_value.setObjectName(u"lbl_observation_value")
+
+        #Wrapping Text and defining maximum widht in observation label
+        self.lbl_observation_value.setWordWrap(True)
+        self.lbl_observation_value.setMaximumWidth(int(PlayerListView.size().width())/2)
+
+
         self.lbl_observation_value.setAlignment(Qt.AlignmentFlag.AlignLeading)
 
         self.grd_detail.addWidget(self.lbl_observation_value, 3, 1, 1, 1)

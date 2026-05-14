@@ -38,7 +38,7 @@ class PlayerGameLaunchController(QObject):
             self.msg.warning(self.tr("Selecione um jogo antes de iniciar."))
             return
 
-        folder = game_data["folder_path"]
+        folder = "/home/luis-bet/.local/share/ttea/exergames/kartea"#game_data["folder_path"]
         # Pega o 'exec' (ex: main.py) definido no JSON do jogo
         executable = game_data.get("exec", "main.py")
         script_path = os.path.join(folder, executable)

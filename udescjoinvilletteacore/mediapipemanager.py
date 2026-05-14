@@ -6,6 +6,7 @@ from udescjoinvilletteautil import PathConfig
 
 
 class MediaPipeManager:
+    
     def __init__(self):
         # 1. Detecção de Hardware e Sistema
         self.service = CalibrationService()
@@ -15,6 +16,7 @@ class MediaPipeManager:
         # 2. Definição de Caminhos
         path_full = PathConfig.model_path("pose_landmarker_full.task")
         path_heavy = PathConfig.model_path("pose_landmarker_heavy.task")
+        
         # path_full = PathConfig.model_path("pose_landmarker_lite.task")
         # path_heavy = PathConfig.model_path("pose_landmarker_lite.task")
 
@@ -30,6 +32,7 @@ class MediaPipeManager:
             self.model_path = path_full
         else:
             self.model_path = path_heavy
+            print("ATENÇÃO: ", self.model_path)
             try:
                 self.delegate = python.BaseOptions.Delegate.GPU
             except Exception:
@@ -56,6 +59,7 @@ class MediaPipeManager:
             num_poses=1,
         )
         self.detector = vision.PoseLandmarker.create_from_options(options)
+
 
     def detect(self, mp_image, timestamp_ms):
         """Executa a detecção de pose para um frame de vídeo."""

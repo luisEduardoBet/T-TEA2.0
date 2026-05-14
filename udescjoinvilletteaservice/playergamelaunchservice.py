@@ -35,9 +35,15 @@ class PlayerGameLaunchService:
         for d in exergame_dir.iterdir():
             if d.is_dir():
                 meta_path = d / PlayerGameLaunchService.METADATA_FILENAME
+                print("LEPO:", d)
+
+                print("VAPO:", meta_path)
+
                 if meta_path.exists():
+            
                     with open(meta_path, "r", encoding="utf-8") as f:
                         data = json.load(f)
                         data["folder_path"] = str(d)  # Guarda o caminho real
                         games.append(data)
+                    
         return games

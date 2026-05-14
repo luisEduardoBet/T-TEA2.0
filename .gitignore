@@ -12,3 +12,7 @@ env/
 *.json
 *.pyc
 report-task.txt
+.python-version
+.idea
+.scannerwork
+.version

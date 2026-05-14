@@ -60,6 +60,7 @@ class PlayerGameLaunchView(QDialog, Ui_PlayerGameLaunchView, WindowConfig):
 
         games = self.service.get_games_metadata()
 
+        print("TESTANDO: ", games)
         for g in games:
             # Busca a tradução dentro do dicionário 'language' do JSON
             trans = g.get("language", {}).get(

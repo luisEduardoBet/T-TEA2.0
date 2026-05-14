@@ -176,7 +176,8 @@ class HealthProfessionalService(QObject):
         success = self.dao.delete(healthprofessional_id)
 
         if success:
-            self.institutionfacility_change.emit(0)
+            self.healthprofessional_change.emit(0)
+
 
         return success
 
